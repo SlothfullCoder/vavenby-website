@@ -1,0 +1,104 @@
+.main-middle {
+    min-width: 100px;
+    width: auto;
+    max-width: none;
+    padding: 0;
+}
+
+/* Events Calendar Styles */
+.events-calendar {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 1rem;
+    background: #f8fff8;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgb(56, 142, 60);
+}
+
+.events-calendar h2 {
+    text-align: center;
+    color: #388E3C;
+    margin-bottom: 1.5rem;
+    font-size: 3rem !important;
+}
+
+.calendar-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 60px 30px 60px;
+}
+
+.calendar-day {
+    background: #fff;
+    border: 2px solid #388E3C;
+    border-radius: 10px;
+    width: 220px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px rgb(56, 142, 60);
+    transition: box-shadow 0.2s;
+}
+
+.district-news {
+    max-width: 1500px;
+}
+
+.district-news .calendar-day {
+    width: 420px;
+}
+
+.calendar-grid .nav-btn {
+    margin: 0;
+}
+
+.calendar-grid .nav-btn:hover {
+    background: #fff;
+    box-shadow: 3px 3px 10px rgb(56, 255, 66);
+    border-color: #27d12c;
+}
+
+.calendar-date {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #388E3C;
+    line-height: 1;
+}
+
+.calendar-month {
+    font-size: 1.7rem;
+    color: #255f27;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-event {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.more-district-news {
+    background-color: #388E3C;
+    border-radius: 10px;
+    border: solid 2px #388E3C;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px rgb(56, 142, 60);
+    transition: box-shadow 0.2s;
+    padding: 10px 20px;
+}
+
+.more-district-news:hover {
+    background: #1fee26;
+    box-shadow: 3px 3px 10px rgb(56, 255, 66);
+}
+
+.short-line {
+    font-size: 0.5rem !important;
+    color: transparent !important;
+    margin: 0 !important;
+}

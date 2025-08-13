@@ -1,0 +1,101 @@
+/* General Stuff */
+html {
+    overflow-y: scroll;
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    color: #333;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header div h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Stuff */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    flex: 1;
+    font-size: 2rem;
+}
+
+.main-opener {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    flex: 1;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.main-middle,
+.main-right,
+.main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-middle {
+    min-width: 100px;
+}
+
+.main-side {
+    flex: 1;
+    max-width: 100vw;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Tooltip for nav button descriptions */
+.nav-desc-tooltip {
+    position: fixed;
+    background: #e3f3ff;
+    color: #222;
+    border-radius: 8px;
+    padding: 8px 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.2s;
+    opacity: 0.97;
+    max-width: 250px;
+    white-space: pre-line;
+}
+
+.error-container {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    font-size: 2rem;
+}

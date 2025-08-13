@@ -1,0 +1,52 @@
+.burning-ban {
+    /* set defaults just in case */
+    --ban-type: "—";
+    --ban-details1: "No ban data available.";
+}
+
+/* Level 1 */
+.burning-ban.type-1 {
+    --ban-type: "1";
+    --ban-details1: "• No larger than 0.5 metres high by 0.5 metres wide.";
+    --ban-details2: "• Used for recreational purposes or by First Nation for ceremonial purposes.";
+}
+
+/* Level 2 */
+.burning-ban.type-2 {
+    --ban-type: "2";
+    --ban-details1: "• Material in one pile not exceeding 2 metres in height, 3 metres in width.";
+    --ban-details2: "• Material concurrently in 2 piles, each not exceeding 2 metres in height and 3 metres in width.";
+    --ban-details3: "• Stubble or grass over an area that does not exceed 0.2 hectares.";
+}
+
+/* Level 3 */
+.burning-ban.type-3 {
+    --ban-type: "3";
+    --ban-details1: "• Material concurrently in 3 or more piles, each not exceeding 2 metres in height and 3 metres in width.";
+    --ban-details2: "• Material in one or more piles, each exceeding 2 metres in height or 3 metres in width.";
+    --ban-details3: "• One or more windrows, not exceeding 200 metres in length or 15 metres in width.";
+}
+
+/* Level 4 */
+.burning-ban.type-4 {
+    --ban-type: "4";
+    --ban-details1: "A open fire used for resource management that;";
+    --ban-details2: "• Is not a category 1, 2 or 3 open fire.";
+    --ban-details3: "• Is used for forest health management, wildlife habitat enhancement, fire hazard abatement or purposes identified by Indigenous peoples.";
+}
+
+.ban-type::before {
+    content: var(--ban-type);
+}
+
+.ban-details1::before {
+    content: var(--ban-details1);
+}
+
+.ban-details2::before {
+    content: var(--ban-details2);
+}
+
+.ban-details3::before {
+    content: var(--ban-details3);
+}
