@@ -4,6 +4,13 @@
     --ban-details1: "No ban data available.";
 }
 
+/* None */
+.burning-ban.type-0 {
+    --ban-type: "0";
+    --ban-details1: "• No fire ban in effect.";
+    --ban-details2: "• Open fires allowed with proper safety measures.";
+}
+
 /* Level 1 */
 .burning-ban.type-1 {
     --ban-type: "1";
